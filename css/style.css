@@ -93,7 +93,7 @@ top
 .top-title{
     font-family:serif;
     font-weight: normal;
-    font-size: 130px;
+    font-size: 103px;
     line-height: 1;
     margin: 0;
 }
@@ -130,6 +130,9 @@ Works
 
 .work-item{
     width: 45%;
+    height: auto;
+    padding-bottom: 16px;
+    border-bottom: solid 2px rgb(193, 193, 193);
 }
 
 /* ------------
