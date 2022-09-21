@@ -1,0 +1,140 @@
+body{
+    color: black;
+    background-color: rgb(234, 234, 234);
+    font-family: serif,system-ui;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+p{
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 2;
+    letter-spacing: 2.5px;
+}
+
+.content-left{
+    float: left;
+}
+
+.content-right{
+    width: 70%;
+    float: right;
+}
+
+.container{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ------------
+header
+------------- */
+header{
+    font-family: serif;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    padding: 48px 72px ;
+}
+
+.header-title{
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.nav-item{
+    margin-bottom: 8px;
+}
+
+/* ----------------
+section共通CSS
+---------------- */
+.section{
+    padding: 96px 0;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 96px;
+}
+
+.textarea{
+    width: 75%;
+    margin-bottom: 96px;
+}
+
+/* ------------
+top
+------------- */
+.top-title{
+    font-family:serif;
+    font-weight: normal;
+    font-size: 130px;
+    line-height: 1;
+    margin: 0;
+}
+
+.top-subtitle{
+    margin-bottom: 56px;
+}
+
+.top-detail{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* --------------------
+about
+------------------- */
+.about-skill{
+    margin-bottom: 16px;
+}
+
+.profile-message{
+    font-weight: 500;
+}
+
+/* -----------------
+Works
+----------------- */
+.work-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.work-item{
+    width: 45%;
+}
+
+/* ------------
+Message
+--------------- */
+.client-message{
+    font-weight: 500;
+}
