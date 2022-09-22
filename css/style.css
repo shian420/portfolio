@@ -8,6 +8,7 @@ body{
 img{
     width: 100%;
     height: auto;
+    filter: grayscale(100%);
 }
 
 a{
@@ -82,9 +83,12 @@ section共通CSS
     margin-bottom: 96px;
 }
 
-.textarea{
-    width: 75%;
-    margin-bottom: 96px;
+.other-title{
+    font-size: 28px;
+}
+
+.other-message{
+    font-weight: 600;
 }
 
 /* ------------
@@ -114,6 +118,11 @@ about
     margin-bottom: 16px;
 }
 
+.profile-message-wrapper{
+    width: 75%;
+    margin-bottom: 96px;
+}
+
 .profile-message{
     font-weight: 500;
 }
@@ -122,7 +131,6 @@ about
 Works
 ----------------- */
 .work-wrapper{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -138,6 +146,50 @@ Works
 /* ------------
 Message
 --------------- */
+.client-message-wrapper{
+    width: 75%;
+}
+
 .client-message{
     font-weight: 500;
 }
+
+/* ------------
+Service
+------------- */
+.service-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.service-item{
+    width: 30%;
+    height: auto;
+    padding: 16px 0;
+    border: solid 2px rgb(193, 193, 193);
+}
+
+.service-icon{
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.service-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+.service-message{
+    padding: 0 16px;
+}
+
+/* ---------------
+Price
+--------------- */
+
