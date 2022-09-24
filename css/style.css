@@ -83,6 +83,10 @@ section共通CSS
     margin-bottom: 96px;
 }
 
+.message-wrapper{
+    width: 75%;
+}
+
 .other-title{
     font-size: 28px;
 }
@@ -118,9 +122,8 @@ about
     margin-bottom: 16px;
 }
 
-.profile-message-wrapper{
-    width: 75%;
-    margin-bottom: 96px;
+.profile-img{
+    margin-top: 96px;
 }
 
 .profile-message{
@@ -146,10 +149,6 @@ Works
 /* ------------
 Message
 --------------- */
-.client-message-wrapper{
-    width: 75%;
-}
-
 .client-message{
     font-weight: 500;
 }
@@ -192,8 +191,12 @@ Service
 /* ---------------
 Price
 --------------- */
+.price-title{
+    margin-bottom: 56px;
+}
+
 .price-table{
-    width: 50%;
+    width: 75%;
     margin-bottom: 48px;
     border: solid 1px rgb(170, 169, 169);
 }
@@ -232,7 +235,7 @@ td{
     border-bottom: solid 1px rgba(193, 193, 193, 0.622);
 }
 
-.td-border-none{
+.price-table td:last-child{
     border-bottom: none;
 }
 
@@ -253,3 +256,18 @@ td{
 /* -----------------
 Work flow
 ----------------- */
+.work-flow-list-wrapper{
+    width: 75%;
+}
+
+.work-flow-list-item{
+    margin-bottom: 32px;
+}
+
+.work-flow-list-wrapper li:last-child{
+    margin-bottom: 0;
+}
+
+/* ------------------
+Contact
+------------------ */

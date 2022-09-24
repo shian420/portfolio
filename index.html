@@ -49,12 +49,12 @@
         <div class="container">
           <h2 class="section-title">About Me</h2>
           <p class="about-skill">HTML/CSS/Bootstrap/Webサイトコーダー - 栗原 亮太</p>
-          <div class="profile-message-wrapper">
+          <div class="message-wrapper">
             <p class="profile-message">
               1998年大阪生まれ。通信制大学 - サイバー大学IT総合学部在学中。2000年に正常な血液が作れなくなる病気になり、母の骨髄を移植⇒学生時代に5回の気胸⇒2018年に気胸の後遺症で二酸化炭素の排出不全になり気管切開。呼吸器を付けベッド生活になる。絶望で無気力になっていた時YouTubeで、在宅ワーク可能なWeb制作のことを知りウェブ業界へ。現在はリハビリをして50m歩けるようにもなり、肺を鍛えながらフリーランスとして活動中。
             </p>
           </div>
-          <img src="./img/profile.JPG" alt="プロフィール画像">
+          <img class="profile-img" src="./img/profile.JPG" alt="プロフィール画像">
 
         </div>
       </section>
@@ -80,7 +80,7 @@
       <section class="message section">
         <div class="container">
           <h2 class="section-title">Message</h2>
-          <div class="client-message-wrapper">
+          <div class="message-wrapper">
             <p class="client-message">
               私は、個人のクライアント様から中小企業様を中心に、LP、ホームページのコーディングを行っています。質問などの対応ですが、私は治療で声が出せないので、電話対応、直接会っての対応ができません。LINE、Twitter、Slack、メールでの対応となります。予めご了承ください。また、闘病中のため、対応時間は10時から19時までとさせて頂いてます。その分、クライアント様の「サイトを作りたいけどイメージが湧かない...」「希望通り作ってくれてるか心配...「できるだけ早くサイトが欲しい」「完成後、一人で管理運用できるか不安...」といった様々な悩みや不安を解消いたします。具体的には「丁寧なヒアリング」「１日ごとの進捗報告」「完成後１か月のアフターフォロー」「サーバーの管理代行」を迅速に行っています。これらのサービスによりクライアント様は「希望のサイトを持てる」「進行状況がすぐにわかり不安がなくなる」「素早く確実な対応と納品をお約束」「支払いメール対応や面倒な管理が必要ないので時間を作れる」といったメリットがあります。さらにアフターフォローでは運用マニュアルもお渡しします。１ヶ月のアフターフォロー終了後も、初心者でも簡単に運用が出来て、困った時の対処も楽になるよう作りました。「クライアント様と意見を交換し合い、信頼関係を築き上げながら安心して頂くサイト作り」を目指し、落ち着いた丁寧な対応で、クライアント様の不安を全力で取り除くよう努めます。安心しておまかせください。
             </p>
@@ -156,7 +156,7 @@
               </td>
             </tr>
             <tr>
-              <td class="td-border-none">サーバー・ドメイン契約
+              <td>サーバー・ドメイン契約
                 <p class="price-data">3000<span class="price-data-span">円</span></p>
               </td>
             </tr>
@@ -175,7 +175,7 @@
               </td>
             </tr>
             <tr>
-              <td class="td-border-none">下層ページ コーディング
+              <td>下層ページ コーディング
                 <p class="price-data">14900<span class="price-data-span">円</span></p>
               </td>
             </tr>
@@ -194,13 +194,15 @@
               </td>
             </tr>
             <tr>
-              <td class="td-border-none">ドメイン管理
+              <td>ドメイン管理
                 <p class="price-data">2500<span class="price-data-span">円</span></p>
               </td>
             </tr>
           </table>
+          <div class="message-wrapper">
           <h4 class="other-title">デザイン完成後のデザイン変更・修正について</h4>         
-          <p class="price-message">コーディング開始前は3回までの修正とさせて頂いてます。<br>それ以上は1回につき5,000円かかります。<br>コーディング開始後の変更は、ほぼ最初からやり直しになるので50000円になります。<br>(画像と文章の変更は無料で対応いたします)</p>
+          <p class="price-message">コーディング開始前は3回までの修正とさせて頂いてます。<br>それ以上は1回につき5,000円かかります。<br>コーディング開始後の変更は、ほぼ最初からやり直しになるので1ページ50000円になります。<br>(画像と文章の変更は無料で対応いたします)</p>
+        </div>
           <table class="price-table">
             <tr>
               <th class="table-header-wrapper">
@@ -213,20 +215,58 @@
               </td>
             </tr>
             <tr>
-              <td class="td-border-none">コーディング開始後
-                <p class="price-data">50000<span class="price-data-span">円</span></p>
+              <td>コーディング開始後
+                <p>1ページ<span class="price-data">50000</span><span class="price-data-span">円</span></p>
               </td>
             </tr>
             </table>
+            <div class="message-wrapper">
             <h4 class="other-title">合計金額の計算方法</h4>         
             <p class="price-message">(基本プラン + 追加ページ数 + サーバー管理保守プラン + デザイン変更・修正料)の合計になります。<br>※サーバー管理保守プランのみの契約はできません。</p>
+            </div>
         </div>
       </section>
 
       <!-- Work flow -->
-      <section class="work_flow section">
+      <section class="work-flow section">
         <div class="container">
           <h2 class="section-title">Work flow</h2>
+            <ul class="work-flow-list-wrapper">
+              <li class="work-flow-list-item">
+            <h4 class="work-flow-title">① ヒアリング</h4>  
+            <p>サイトを作る目的、ターゲット層、イメージ、画像やテキスト内容、希望の料金プランを聞き取ります。</p>
+            </li>
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">② 契約書の確認・サイン</h4>
+              <p>トラブルをなくすためにも、契約書の確認・サインをしていただきます。</p>
+            </li>            
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">③ デザインカンプ作成</h4>
+              <p>聞き取った内容に沿ってデザインを作成します。画像、テキストはご用意いただけると助かります。</p>
+            </li>
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">④ デザイン完成・確認</h4>
+              <p>完成したデザインを確認していただきます。作業進行の関係上、無料での修正・変更は3回までとさせていただきます。</p>
+            </li>
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">⑤ コーディング開始</h4>
+              <p>いよいよサイトを作っていきます。ここからのデザイン修正は、画像やテキスト内容などの細かな修正を除き、基本受け付けておりません。もしどうしても変更したい場合は1ページ50000円かかりますが変更・修正させていただきます。</p>
+            </li>
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">⑥ サイト完成・納品</h4>
+              <p>完成したサイトを確認していただき納品します。</p>
+            </li>
+            <li class="work-flow-list-item">
+              <h4 class="work-flow-title">⑦ 料金のお支払い</h4>
+              <p>料金をお支払いいただきます。お支払い確認後、１ヶ月アフターフォローさせていただきます。振り込みの際は一言いただけるとすぐに確認できるので助かります。</p>
+            </li>       
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
 
         </div>
       </section>
