@@ -443,6 +443,10 @@ section共通CSS
 --------------
 about
 --------------- */
+.client-message{
+    font-size: 16px;
+}
+
 .profile-img{
     margin-top: 80px;
 }
