@@ -28,6 +28,21 @@ p{
     letter-spacing: 2.5px;
 }
 
+.btn{
+    width: 100%;
+    border: solid 2px rgb(115, 115, 115);
+    font-size: 32px;
+    text-align: center;
+    padding: 56px 0;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    color: white;
+    border: solid 2px white;
+    background-color: black;
+}
+
 .content-left{
     float: left;
 }
@@ -38,7 +53,7 @@ p{
 }
 
 .container{
-    width: 90%;
+    width: 95%;
     max-width: 980px;
     margin: auto;
 }
@@ -268,6 +283,73 @@ Work flow
     margin-bottom: 0;
 }
 
+/* --------------
+Contact共通
+------------- */
+.icon-item{
+    width: 58px;
+    margin-right: 56px;
+}
+
+.icon-title{
+    font-size: clamp(8px, 100vw,12px);
+}
+
+.contact-img{
+    width: 80%;
+    margin-bottom: 8px;
+}
+
 /* ------------------
 Contact
 ------------------ */
+.contact-page{
+    text-align: center;
+}
+
+.contact-container{
+    width: 90%;
+}
+
+.contact-btn{
+    margin-bottom: 112px;
+}
+
+.contact-icon-wrapper{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.top-btn{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 96px;
+}
+
+/* -----------------
+contact.html
+-------------- */
+.icon-wrapper{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 112px;
+}
+
+.contact-email{
+    font-size: 32px;
+}
+
+/* --------------
+footer
+------------- */
+.footer{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
