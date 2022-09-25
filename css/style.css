@@ -427,7 +427,7 @@ section共通CSS
 }
 
 .section-title{
-    font-size: 18px;
+    font-size: 32px;
     margin-bottom: 80px;
 }
 
@@ -436,15 +436,19 @@ section共通CSS
 }
 
 .other-title{
-    font-size: 18px;
+    font-size: 27.5px;
 }
 
 /* 
 --------------
 about
 --------------- */
-.client-message{
-    font-size: 16px;
+.about-skill{
+    font-size: 18px;
+}
+
+.profile-message{
+    font-size: 18px;
 }
 
 .profile-img{
@@ -493,7 +497,7 @@ service
 price
 ------------- */
 .price-title{
-    font-size: 18px;
+    font-size: 27.5px;
 }
 
 .price-table{
@@ -501,11 +505,11 @@ price
 }
 
 .table-header-title{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .header-price{
-    font-size: 20px;
+    font-size: 32px;
 }
 
 .price-header-span{
@@ -518,11 +522,15 @@ td{
 }
 
 .price-data{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .price-data-span{
-    font-size: 10px;
+    font-size: 14px;
+}
+
+.price-message{
+    font-size: 18px;
 }
 
 /* -----------------
@@ -532,8 +540,12 @@ work flow
     width: 100%;
 }
 
+.work-flow-list-wrapper p{
+    font-size: 18px;
+}
+
 .work-flow-title{
-    font-size: 16px;
+    font-size: 22.5px;
 }
 
 /* -------------
@@ -562,6 +574,10 @@ contact
 /* -----------------
 contact.html
 -------------- */
+.contact-message{
+    font-size: 18px;
+}
+
 .icon-wrapper{
     width: 100%;
 }
@@ -572,7 +588,7 @@ contact.html
 }
 
 .contact-email{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
 }
 
