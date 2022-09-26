@@ -7,7 +7,7 @@ $(window).scroll(function(){
         $(this).addClass('effect-scroll');
       }
     });
-    $('.effect-right').each(function(){
+    $('.effect-left').each(function(){
         var zahyou=$(this).offset().top;
         var scleantop=$(window).scrollTop();
         var windowheight=$(window).height();
