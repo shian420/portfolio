@@ -1,3 +1,6 @@
+// --------------------
+// エフェクト
+// ------------------------
 $(window).scroll(function(){
     $('.effect').each(function(){
       var zahyou=$(this).offset().top;
@@ -16,3 +19,31 @@ $(window).scroll(function(){
         }
       });
   });
+
+  // ----------------------
+  // ハンバーガーメニュー
+  // -----------------------
+var flag = 1;
+
+
+  $(function(){
+    $('.menu-btn').on('click',function(){
+      if(flag == 1){
+
+      $('.content-left').removeClass('close');
+      $('.content-left').addClass('open');
+
+flag = 0;
+
+}else{
+      $('.content-left').removeClass('open');
+      $('.content-left').addClass('close');
+
+flag =  1;
+
+};
+});
+});
+
+
+

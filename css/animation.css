@@ -1,0 +1,95 @@
+.effect-left{
+    opacity: 0;
+    transform: translate(-35px,0);
+    transition: all .8s ease-out;
+}
+
+.effect{
+    opacity: 0;
+    transform: translate(0,35px);
+    transition: all .8s ease-out;
+}
+
+.effect-scroll{
+    opacity: 1;
+   transform:translate(0,0);
+  }
+
+  /* -------------
+  トップアニメーション
+  --------------- */
+  .effect-top{
+    animation: name alternate forwards .7s linear;
+  }
+
+  .effect-top-subtitle{
+    animation: tops alternate forwards .5s linear;
+    animation-delay: .4s;
+    opacity: 0;
+  }
+
+  .effect-btm-top{
+    animation: tops alternate forwards .5s linear;
+    animation-delay: .5s;
+    opacity: 0;
+  }
+
+
+  @keyframes name{
+    0%{
+        opacity: 0;
+      transform: translateY(45px);
+    }
+
+    100%{
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes tops{
+    0%{
+        opacity: 0;
+      transform: translateY(35px);
+    }
+
+    100%{
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ----------------
+  ハンバーガーメニュー
+  ---------------------- */
+  .open{
+    animation: opens alternate forwards .2s linear;
+}
+
+@keyframes opens{
+    0%{
+      right: -100%;
+    }
+
+    100%{
+        right: 0;
+    }
+  }
+
+  .close{
+    animation: closes alternate forwards .2s linear;
+}
+@keyframes closes{
+  0%{
+    right: 0;
+  }
+
+  100%{
+      right: -100%;
+  }
+}
+
+
+
+
+
