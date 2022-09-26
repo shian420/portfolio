@@ -85,6 +85,10 @@ header{
     margin-bottom: 8px;
 }
 
+.nav-float-wrapper{
+    display: none;
+}
+
 /* ----------------
 section共通CSS
 ---------------- */
@@ -408,49 +412,113 @@ footer
 スマホ用CSS
 --------------- */
 @media screen and (max-width:768px){
-    .container{
-        width: 90%;
-        margin: 0 auto;
-    }
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
 
-    p{
-        font-size: 12px;
-    }
-    
-    .btn{
-        font-size: 20px;
-        padding: 28px 0;
-    }
-    
-    .content-left{
-        display: none;
-    }
-    
-    .content-right{
-        width: 100%;
-        float: none;
-    }
+p{
+    font-size: 12px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 28px 0;
+}
+
+.content-right{
+    width: 100%;
+    float: none;
+}
     
     /* ------------
     header
     ------------- */
-    header{
-        font-family: serif;
-        width: 30%;
-        height: 100vh;
-        position: fixed;
-        z-index: 1;
-        padding: 48px 72px ;
-    }
-    
+.menu-btn{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    border:solid 1px rgb(153, 153, 153);
+    border-radius: 999px;
+    padding: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.btn-line,.btn-line2,.btn-line3{
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+    transition: .2s;
+}
+
+.btn-line2{
+    transform: translateY(-8px);
+}
+
+.btn-line3{
+    transform: translateY(6px);
+}
+
+.content-left{
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    float: none;
+    background-color: black;
+}
+
+header{
+    width: 100%;
+    position: static;
+    padding: 24px 0;
+}
+
 .header-title{
-        font-size: 32px;
-        font-weight: normal;
-    }
-    
-    .nav-item{
-        margin-bottom: 8px;
-    }
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 32px;
+}
+
+.nav-item{
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.nav-float-wrapper{
+    display: block;
+    padding: 32px 0;
+}
+
+.nav-left{
+    width: 50%;
+    float: left;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.nav-mobile-color{
+    color: white;
+}
+
+.mobile-nav-color{
+    color: rgba(255, 255, 255, 0.626);
+}
+
+.nav-right{
+    width: 50%;
+    float: right;
+}
+
+.nav-img{
+    filter: none;
+}
 
     /* --------------------
     top
@@ -648,4 +716,80 @@ footer
 }
 
 }
+
+/* ---------------
+エフェクト
+--------------- */
+.effect-right{
+    opacity: 0;
+    transform: translate(75px,0);
+    transition: all .4s ease-out;
+}
+
+.effect{
+    opacity: 0;
+    transform: translate(0,75px);
+    transition: all .4s ease-out;
+}
+
+.effect-scroll{
+    opacity: 1;
+   transform:translate(0,0);
+  }
+
+  /* -------------
+  トップアニメーション
+  --------------- */
+  .effect-top{
+    animation: name alternate forwards 1s ease-out;
+  }
+
+  .effect-top-subtitle{
+    animation: name alternate forwards 1s ease-out;
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+
+
+  @keyframes name{
+    0%{
+        opacity: 0;
+      transform: translateX(100px);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .effect-btm-top{
+    animation: tops alternate forwards 1s ease-out;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  @keyframes tops{
+    0%{
+        opacity: 0;
+      transform: translateY(50px);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
 
