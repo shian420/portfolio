@@ -194,7 +194,7 @@ Service
 
 .service-title{
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     letter-spacing: normal;
 }
@@ -227,6 +227,8 @@ Price
 
 .table-header-title{
     font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
 .header-price{
@@ -354,6 +356,45 @@ footer
     opacity: 0.5;
 }
 
+/* -----------------
+タブレット横向きCSS
+-------------------- */
+@media screen and (max-width:1080px){
+.message-wrapper{
+        width: 90%;
+}
+
+.service-item{
+    width: 44%;
+    margin: 10px 20px 10px 0;
+}
+
+.price-table{
+    width: 90%;
+}
+
+.work-flow-list-wrapper{
+    width: 90%;
+}
+}
+
+/* ------------------
+タブレット縦向きCSS
+------------------- */
+@media screen and (max-width:834px){
+.message-wrapper{
+    width: 100%;
+}
+
+.price-table{
+    width: 100%;
+}
+
+.work-flow-list-wrapper{
+    width: 100%;
+}
+}
+
 /* ----------------
 スマホ用CSS
 --------------- */
@@ -406,7 +447,7 @@ footer
     top
     --------------------- */
 .top-title{
-    font-size: 40px;
+    font-size: 52px;
     margin-bottom: 12px;
 }
 
@@ -429,10 +470,6 @@ section共通CSS
 .section-title{
     font-size: 32px;
     margin-bottom: 80px;
-}
-
-.message-wrapper{
-    width: 100%;
 }
 
 .other-title{
@@ -471,6 +508,13 @@ work
     margin-bottom: 40px;
 }
 
+/* ---------------
+message
+---------------- */
+.client-message{
+    font-size: 18px;
+}
+
 /* -------------------
 service
 --------------- */
@@ -500,10 +544,6 @@ price
     font-size: 27.5px;
 }
 
-.price-table{
-    width: 100%;
-}
-
 .table-header-title{
     font-size: 18px;
 }
@@ -518,15 +558,15 @@ price
 
 td{
     font-size: 12px;
-    padding: 4px 8px;
+    padding: 16px 8px;
 }
 
 .price-data{
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .price-data-span{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .price-message{
@@ -536,10 +576,6 @@ td{
 /* -----------------
 work flow
 --------------- */
-.work-flow-list-wrapper{
-    width: 100%;
-}
-
 .work-flow-list-wrapper p{
     font-size: 18px;
 }
