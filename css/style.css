@@ -435,16 +435,16 @@ p{
     float: none;
 }
     
-    /* ------------
-    header
-    ------------- */
+/* ----------------
+スマホヘッダーボタン
+------------------- */
 .menu-btn{
     position: fixed;
     top: 15px;
-    right: 0px;
+    right: 15px;
     z-index: 4;
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border:solid 1px rgb(153, 153, 153);
     border-radius: 999px;
     padding: 0;
@@ -452,6 +452,7 @@ p{
 }
 
 .btn-line,.btn-line2,.btn-line3{
+    position: relative;
     display: block;
     width: 50%;
     height: 1px;
@@ -468,6 +469,30 @@ p{
     transform: translateY(6px);
 }
 
+.open-line,.open-line2{
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: white;
+    transition: .2s;
+}
+
+.open-line{
+    transform: rotate(-45deg);
+}
+
+.open-line2{
+    transform: rotate(45deg);
+}
+
+.open-line3{
+    display: none;
+}
+
+    /* ------------
+    header
+    ------------- */
 .content-left{
     width: 100%;
     position: fixed;
@@ -684,11 +709,11 @@ contact
 }
 
 .icon-title{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .top-btn{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* -----------------
@@ -716,7 +741,7 @@ contact.html
 footer
 ------------- */
 .privacy{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 }
