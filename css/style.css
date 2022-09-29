@@ -368,14 +368,6 @@ contact.html
     font-weight: 600;
 }
 
-/* --------------
-footer
-------------- */
-.footer{
-    font-size: 12px;
-    opacity: 0.5;
-}
-
 /* -----------------
 タブレット横向きCSS
 -------------------- */
@@ -759,13 +751,6 @@ contact.html
 .contact-email{
     font-size: 20px;
     font-weight: 600;
-}
-
-/* -------------
-footer
-------------- */
-.privacy{
-    font-size: 12px;
 }
 
 }
