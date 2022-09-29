@@ -43,13 +43,25 @@ p{
     background-color: black;
 }
 
+.content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.menu-btn{
+    display: none;
+}
+
 .content-left{
-    float: left;
+    width: 30%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .content-right{
     width: 70%;
-    float: right;
 }
 
 .container{
@@ -67,12 +79,12 @@ p{
 /* ------------
 header
 ------------- */
+.mobile-nav{
+    display: none;
+}
+
 header{
     font-family: serif;
-    width: 30%;
-    height: 100vh;
-    position: fixed;
-    z-index: 1;
     padding: 48px 72px ;
 }
 
@@ -493,6 +505,18 @@ p{
     /* ------------
     header
     ------------- */
+.menu-btn{
+    display: block;
+}
+
+.mobile-nav{
+    display: block;
+}
+
+.pc-nav{
+    display: none;
+}
+
 .content-left{
     width: 100%;
     position: fixed;
@@ -512,6 +536,7 @@ header{
     text-align: center;
     font-size: 56px;
     margin-bottom: 32px;
+    color: white;
 }
 
 .nav-item{
@@ -520,14 +545,14 @@ header{
     text-align: center;
 }
 
-.nav-float-wrapper{
+.nav-flex-wrapper{
     display: block;
+    display: flex;
     padding: 32px 0;
 }
 
 .nav-left{
     width: 50%;
-    float: left;
     padding-top: 12px;
     padding-left: 12px;
 }
@@ -542,7 +567,6 @@ header{
 
 .nav-right{
     width: 50%;
-    float: right;
 }
 
 .nav-img{
